@@ -17,4 +17,14 @@ export default defineConfig({
             },
         }),
     ],
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks: undefined,
+                inlineDynamicImports: true,
+                // entryFileNames: '[name].js',   // currently does not work for the legacy bundle
+                // assetFileNames: '[name].[ext]', // currently does not work for images
+            },
+        },
+    },
 });
