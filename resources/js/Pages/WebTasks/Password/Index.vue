@@ -82,7 +82,7 @@ const click = () => {
 </script>
 
 <template>
-    <section class="w-1/4 px-12 py-10 bg-white border border-slate-800 shadow-lg rounded-lg mx-auto my-64">
+    <section class="md:w-1/4 px-12 py-10 bg-white border border-slate-800 shadow-lg rounded-lg mx-6 md:mx-auto my-16 md:my-64">
         <h2 :class="{'text-red-600': currentTitle !== defaultTitle}"
             class="font-bold text-lg w-full text-center">
             {{ currentTitle }}
@@ -95,7 +95,7 @@ const click = () => {
                 </label>
                 <input type="text"
                        :value="sdlfj3"
-                       class="p-1 border border-gray-500 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full"
+                       class="p-1 border border-gray-500 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full bg-gray-200"
                        disabled
                        readonly>
             </div>
@@ -105,6 +105,7 @@ const click = () => {
                 </label>
                 <input type="password"
                        v-model="input"
+                       autofocus
                        @keydown.enter="click"
                        class="p-1 border border-gray-500 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
             </div>
