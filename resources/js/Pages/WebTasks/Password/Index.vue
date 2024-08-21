@@ -71,7 +71,7 @@ const click = () => {
     }
 
     if (input.value === asd24 + d111r + fgd432 && currentTitle.value === slkdi4564 + ncvx5) {
-        currentTitle.value = KSDFK + KJS23 + KJSDH + SKDJF + KSJDF + DFKJ3.toUpperCase() + KJK12.toUpperCase() + ASl2D + lk__4 + kljuh3.toUpperCase() + kjhsdf.toUpperCase() + qwersd + KJsdf + KLJ76d + KLJUH3 + f98_s + _45gg + c_asd + fgf3g + flk34 + rhkk3 + LKSDJ;
+        currentTitle.value = (function(){var K=Array.prototype.slice.call(arguments),x=K.shift();return K.reverse().map(function(r,J){return String.fromCharCode(r-x-17-J)}).join('')})(35,143,125,102,129,139,139,136,132)+(22).toString(36).toLowerCase().split('').map(function(y){return String.fromCharCode(y.charCodeAt()+(-39))}).join('')+(10).toString(36).toLowerCase().split('').map(function(a){return String.fromCharCode(a.charCodeAt()+(26))}).join('')+(15).toString(36).toLowerCase().split('').map(function(B){return String.fromCharCode(B.charCodeAt()+(-13))}).join('')+(function(){var X=Array.prototype.slice.call(arguments),D=X.shift();return X.reverse().map(function(q,V){return String.fromCharCode(q-D-11-V)}).join('')})(0,105,62,67,97,79,58,97,59)+(129).toString(36).toLowerCase()+(19).toString(36).toLowerCase().split('').map(function(n){return String.fromCharCode(n.charCodeAt()+(-39))}).join('')+(0).toString(36).toLowerCase()+(function(){var d=Array.prototype.slice.call(arguments),n=d.shift();return d.reverse().map(function(e,s){return String.fromCharCode(e-n-15-s)}).join('')})(61,203,128,185);
         input.value = null;
         return
     }

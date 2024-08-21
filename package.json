@@ -4,7 +4,8 @@
     "scripts": {
         "dev": "vite",
         "dev-quiet": "vite --log-level silent",
-        "build": "vite build"
+        "build": "vite build",
+        "watch": "vite build --watch"
     },
     "devDependencies": {
         "@inertiajs/vue3": "^1.0.0",
