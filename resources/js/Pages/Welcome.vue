@@ -3,8 +3,9 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
 
 const tasks = [
     {'link': route('task-password', {}, false), 'name': 'PA$$w0RD'},
-    {'link': route('task-web-basic', {}, false), 'name': 'W3B-BaS1C'},
+    {'link': route('task-web-basic-get', {}, false), 'name': 'W3B-BaS1C'},
     {'link': route('task-bypass', {}, false), 'name': 'W3B-ByPa$$'},
+    {'link': route('task-shop', {}, false), 'name': 'W3B-Shop'},
 ]
 </script>
 

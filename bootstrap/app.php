@@ -16,6 +16,8 @@ return Application::configure(basePath: dirname(__DIR__))
             \Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets::class,
         ])->validateCsrfTokens(except: [
             '/task-web-basic'
+        ])->encryptCookies([
+            'shop-token'
         ]);
 
         //
