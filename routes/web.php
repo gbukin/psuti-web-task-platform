@@ -3,33 +3,29 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-const TASK_WEB_BASIC = '/task-web-basic';
-
 Route::get('/', function () {
     return Inertia::render('Welcome');
 });
 
-Route::prefix('/')->group(function () {
-    Route::get(TASK_WEB_BASIC, function () {
-        header('X-Glaf-Part-1: VzNiLQ==');
-        abort(404);
-    })->name('task-web-basic-get');
+Route::get('/task-web-basic', function () {
+    header('X-Glaf-Part-1: VzNiLQ==');
+    abort(404);
+})->name('task-web-basic-get');
 
-    Route::patch(TASK_WEB_BASIC, function () {
-        header('X-Glaf-Part-2: 0KLRg9GCINGC0L7Rh9C90L4g0L/Rg9GB0YLQvg==');
-        abort(500);
-    })->name('task-web-basic-patch');
+Route::patch('/task-web-basic', function () {
+    header('X-Glaf-Part-2: 0KLRg9GCINGC0L7Rh9C90L4g0L/Rg9GB0YLQvg==');
+    abort(500);
+})->name('task-web-basic-patch');
 
-    Route::put(TASK_WEB_BASIC, function () {
-        setcookie('TASK-TOKEN', 'K-Synt-Cneg-3: gN$x', time() + 3600 * 24);
-        return redirect('/task-web-basic');
-    })->name('task-web-basic-put');
+Route::put('/task-web-basic', function () {
+    setcookie('TASK-TOKEN', 'K-Synt-Cneg-3: gN$x', time() + 3600 * 24);
+    return redirect('/task-web-basic');
+})->name('task-web-basic-put');
 
-    Route::post(TASK_WEB_BASIC, function () {
-        header('X-Glaf-Part-2: ');
-        abort(500);
-    })->name('task-web-basic-post');
-});
+Route::post('/task-web-basic', function () {
+    header('X-Glaf-Part-2: ');
+    abort(500);
+})->name('task-web-basic-post');
 
 Route::get('/task-password', [\App\Http\Controllers\WebTasksController::class, 'taskPasswordIndex'])
     ->name('task-password');
