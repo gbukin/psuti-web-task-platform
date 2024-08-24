@@ -18,7 +18,7 @@ Route::patch('/task-web-basic', function () {
 })->name('task-web-basic-patch');
 
 Route::put('/task-web-basic', function () {
-    setcookie('TASK-TOKEN', 'K-Synt-Cneg-3: gN$x', time() + 3600 * 24);
+    Cookie::queue('K-Synt-Cneg-3', 'gN$x', time() + 3600 * 24);
     return redirect('/task-web-basic');
 })->name('task-web-basic-put');
 

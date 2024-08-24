@@ -17,7 +17,8 @@ return Application::configure(basePath: dirname(__DIR__))
         ])->validateCsrfTokens(except: [
             '/task-web-basic'
         ])->encryptCookies([
-            'shop-token'
+            'shop-token',
+            'TASK-TOKEN'
         ]);
 
         //
