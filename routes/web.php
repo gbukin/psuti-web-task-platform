@@ -23,7 +23,7 @@ Route::put('/task-web-basic', function () {
 })->name('task-web-basic-put');
 
 Route::post('/task-web-basic', function () {
-    header('X-Glaf-Part-2: ');
+    header('X-Glaf-Part-2: NkEkMWM=');
     abort(500);
 })->name('task-web-basic-post');
 
