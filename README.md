@@ -34,8 +34,21 @@ npm run build
 ```
 
 ### Запуск
+
 ```shell
 php artisan serve
 ### или
 php artisan serve -q # если не хотите видеть логи
+```
+
+
+### Для задачи "Онлайн Магазин"
+#### Потребуется запустить два процесса, например:
+1. В двух терминалах
+2. Через Ctrl+Z + bg
+3. через tmux
+4. через supervisord
+
+```php
+php artisan queue:work --sleep=1
 ```
