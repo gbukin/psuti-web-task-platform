@@ -27,6 +27,7 @@ DB_PASSWORD=root
 # server
 composer install
 php artisan optimize:clear
+php artisan migrate
 
 # client
 npm install
@@ -46,8 +47,8 @@ php artisan serve -q # если не хотите видеть логи
 #### Потребуется запустить два процесса, например:
 1. В двух терминалах
 2. Через Ctrl+Z + bg
-3. через tmux
-4. через supervisord
+3. Через tmux
+4. Через supervisord
 
 ```php
 php artisan queue:work --sleep=1
